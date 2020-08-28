@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="developer" content="Surin Machaiah M T">
-    <title>WiDS Mysore | Welcome</title>
+    <title>WiDS Mysore | Datathon</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
@@ -16,22 +16,15 @@
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('index')}}">Home</a></li>
                     <li><a href="{{url_for('team')}}">Team</a></li>
                     <li><a href="{{url_for('speakers')}}">Speakers</a></li>
                     <li><a href="{{url_for('agenda')}}">Agenda</a></li>
-                    <li><a href="{{url_for('datathon')}}">Datathon</a></li>
+                    <li class="current"><a href="{{url_for('datathon')}}">Datathon</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section id="showcase">
-        <div class="container">
-            <h1>Woman In Data Science</h1>
-            <h2>Mysore</h2>
-        </div>
-    </section>
 
     <section id="register">
         <div class="container">
@@ -43,15 +36,14 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="datathon">
         <div class="container">
-            <h3>About Us</h3>
-            <p>{{about}}</p> <!--About WiDS here-->
+
         </div>
     </section>
 
     <footer>
-        <p>WiDS Mysore, Copyright &copy; 2020</p>
+        <p>WiDS, Copyright &copy; 2020</p>
     </footer>
 </body>
 </html>

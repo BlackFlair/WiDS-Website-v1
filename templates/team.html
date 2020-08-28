@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="developer" content="Surin Machaiah M T">
+    <title>WiDS Mysore | Team</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="./images/logo.png"> <!--Logo-->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li class="current"><a href="{{url_for('team')}}">Team</a></li>
+                    <li><a href="{{url_for('speakers')}}">Speakers</a></li>
+                    <li><a href="{{url_for('agenda')}}">Agenda</a></li>
+                    <li><a href="{{url_for('datathon')}}">Datathon</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="register">
+        <div class="container">
+            <a href=" " ><h1>Register Here</h1></a> <!--Registration link-->
+            <!--<form>
+                <input type="email" placeholder="Email">
+                <button type="submit" class="button1">Register</button>
+            </form>-->
+        </div>
+    </section>
+
+    <section class="boxes">  <!--Team-->
+        <div class="container">
+            <div class="box">
+                <img src=" ">
+                <h3>Person 1</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>Person 2</h3>
+            </div>
+
+            .
+            .
+            .
+            .
+
+            <div class="box">
+                <img src=" ">
+                <h3>Person N</h3>
+            </div>
+        </div>
+    </section>
+
+    <section>  <!--Ambassador-->
+        <div class="container">
+            <div class="boxes">
+                <img src="">
+                <h2>Usha Rengaraju</h2>
+                <h3>ROLE</h3>
+                <p>DESCRIPTION</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="boxes">  <!--Universities-->
+        <h3>University</h3>
+        <div class="container">
+            <div class="box">
+                <img src=" ">
+                <h3>VVCE</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>NIE</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>GSSS</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>XXXX</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>WiDS, Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>

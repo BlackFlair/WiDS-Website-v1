@@ -11,13 +11,46 @@ body{
 .container{
     width:80%;
     margin: auto;
-    overflow: hidden;
-
+    overflow: auto;
 }
 
 ul{
     padding: 0px;
     margin: 0px;
+}
+
+.button_1{
+    height: 38px;
+    background: #06c258;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/* Boxes */
+boxes{
+    margin-top: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+boxes img{
+    padding: 10px;
+    width: 150px;
+    float: center;
+}
+
+boxes .box{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+boxes .box img{
+    width: 100px;
+    padding: 5px;
 }
 
 /* Header */
@@ -64,5 +97,61 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;
-    background: url('../images/showcase.jpg') no-repeat;
+    background: url("{{url_for('images', filename='showcase.jpg'}}") no-repeat 0 -400px;
+    text-align-center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Register */
+#register{
+    padding: 150px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#register h1{
+    float: left;
+}
+
+#register form{
+    float: right;
+    margin-top: 15px;
+}
+
+#register input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* About */
+#about{
+    margin-top: 20px;
+}
+
+#about h3{
+    text-align: center;
+}
+
+#about p{
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background: #06c258;
+    text-align: center;
 }
