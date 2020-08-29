@@ -98,7 +98,7 @@
 
         /* Register */
         #register{
-            padding: 8px;
+            text-decoration: none;
             color: #ffffff;
             background: #35424a;
         }
@@ -108,9 +108,15 @@
             color: #ffffff;
         }
 
+        /* Speakers */
+        #speakers h1{
+            color: #06c258;
+            text-align: center;
+        }
+
         /* Footer */
         footer{
-            padding: 10px;
+            padding: 3px;
             margin-top: 10px;
             color: #ffffff;
             background: #06c258;
@@ -130,7 +136,7 @@
             <nav>
                 <ul>
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="{{url_for('team')}}">Team</a></li>
+<!--                    <li><a href="{{url_for('team')}}">Team</a></li>-->
                     <li class="current"><a href="{{url_for('speakers')}}">Speakers</a></li>
                     <li><a href="{{url_for('agenda')}}">Agenda</a></li>
                     <li><a href="{{url_for('datathon')}}">Datathon</a></li>
@@ -150,6 +156,7 @@
     </section>
 
     <section id="speakers">
+        <h1>Speakers</h1>
         <div class="container">
 
         </div>

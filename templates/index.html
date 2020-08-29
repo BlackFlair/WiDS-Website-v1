@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="developer" content="Surin Machaiah M T">
+    <meta name="developer" content="Surin-Machaiah-M-T">
     <title>WiDS Mysore | Welcome</title>
 <!--    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">-->
 
@@ -19,7 +19,7 @@
 
         /* Global */
         .container{
-            width:80%;
+            width: 95%;
             margin: auto;
             overflow: auto;
             text-align: center;
@@ -30,7 +30,7 @@
             margin: 0px;
         }
 
-        /* Header */
+       /* Header */
         header{
             background: #35424a;
             color: #ffffff;
@@ -54,7 +54,6 @@
 
         header #branding{
             float: left;
-            width: 100px;
         }
 
         header nav{
@@ -74,10 +73,14 @@
 
         /* Showcase */
         #showcase{
-            min-height: 740px;
-            background: url("images/showcase_img.jpg");
+            min-height: 760px;
+            background: url("{{url_for('static', filename='images/showcase_img_2.jpg')}}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(3px);
             text-align-center;
             color: #ffffff;
+            max-width: 100%;
         }
 
         #showcase h1{
@@ -86,13 +89,12 @@
             margin-bottom: 10px;
         }
 
-        #showcase p{
-            font-size: 20px;
+        #showcase h2{
+            font-size: 40px;
         }
 
         /* Register */
         #register{
-            padding: 8px;
             color: #ffffff;
             background: #35424a;
         }
@@ -102,22 +104,46 @@
             color: #ffffff;
         }
 
-        /* About */
-        #about{
+        /* Subheading */
+        .subheading{
             margin-top: 20px;
         }
 
-        #about h3{
+        .subheading h1{
+            text-align: center;
+            color: #06c258;
+        }
+
+        .subheading p{
             text-align: center;
         }
 
-        #about p{
+        /* Cards */
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+            grid-gap: 0.5rem;
+            grid-column: 0.5rem;
+            line-height: 0.5rem;
+        }
+
+        .card_title{
+            color: #ffffff;
             text-align: center;
+        }
+
+        .card{
+            box-shadow: 0px 1px 5px #06c258;
+            background-color: #909090;
+        }
+
+        img{
+            max-width: 100%;
         }
 
         /* Footer */
         footer{
-            padding: 10px;
+            padding: 3px;
             margin-top: 10px;
             color: #ffffff;
             background: #06c258;
@@ -131,29 +157,38 @@
     <header>
         <div class="container">
             <div id="branding">
-                <img src="images/test.jpg"> <!--Logo-->
+                <img src="" > <!--Logo-->
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="{{url_for('team')}}">Team</a></li>
-                    <li><a href="{{url_for('speakers')}}">Speakers</a></li>
-                    <li><a href="{{url_for('agenda')}}">Agenda</a></li>
-                    <li><a href="{{url_for('datathon')}}">Datathon</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+                        <!--<li><a href="{{url_for('team')}}">Team</a></li>-->
+                        <li><a href="{{url_for('speakers')}}">Speakers</a></li>
+                        <li><a href="{{url_for('agenda')}}">Agenda</a></li>
+                        <li><a href="{{url_for('datathon')}}">Datathon</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
+
+
+    <!--SHOWCASE-->
     <section id="showcase">
         <div class="container">
             <h1>Woman In Data Science</h1>
             <h2>Mysore</h2>
         </div>
     </section>
+
+
+
+    <!--REGISTER-->
     <section id="register">
         <div class="container">
-            <a href=" " ><h1>Register Here</h1></a> <!--Registration link-->
+            <a href=" "><h1>Register Here</h1></a> <!--Registration link-->
             <!--<form>
                 <input type="email" placeholder="Email">
                 <button type="submit" class="button1">Register</button>
@@ -162,12 +197,83 @@
     </section>
 
 
-    <section id="about">
+
+    <!--ABOUT-->
+    <section class="subheading">
         <div class="container">
-            <h3>About Us</h3>
+            <h1 class="page-title">About Us</h1>
             <p> </p> <!--About WiDS here-->
         </div>
     </section>
+
+
+
+    <!--TEAM-->
+    <section class="boxes">
+        <div class="subheading">
+            <h1 class="page-title">Team</h1>
+        </div>
+
+        <section class="card-container">
+            <article class="card">
+                <figure class="card_thumbnail">
+                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                </figure>
+                <div class="card_title">
+                    <h4>NAME</h4>
+                </div>
+            </article>
+        </section>
+
+    </section>
+
+
+
+    <!--AMBASSADOR-->
+    <section class="boxes">
+        <div class="subheading">
+            <h1 class="page-title">Ambassador</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="">
+                <h2>Usha Rengaraju</h2>
+                <h3>ROLE</h3>
+                <p>DESCRIPTION</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--UNIVERSITIES-->
+    <section class="boxes">
+        <div class="subheading">
+            <h1 class="page-title">Universities</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src=" ">
+                <h3>VVCE</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>NIE</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>GSSS</h3>
+            </div>
+
+            <div class="box">
+                <img src=" ">
+                <h3>XXXX</h3>
+            </div>
+        </div>
+    </section>
+
 
     <footer>
         <p>WiDS Mysore, Copyright &copy; 2020</p>
