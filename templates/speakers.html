@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="developer" content="Surin Machaiah M T">
     <title>WiDS Mysore | Speakers</title>
 <!--    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">-->
@@ -14,7 +14,7 @@
             line-height: 1.5;
             padding: 0px;
             margin: 0px;
-            background-color: #f4f4f4;
+            background-color: #d8d8d8;
         }
 
         /* Global */
@@ -109,9 +109,111 @@
         }
 
         /* Speakers */
-        #speakers h1{
-            color: #06c258;
+        .speakers{
+            padding: 100px 10px 40px 0;
+            height: 100%;
+            display: inline;
+            place-items: center;
             text-align: center;
+        }
+
+        .speakers-container{
+            padding: 50px 30px 0 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            line-height: 0.5rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card{
+            grid-template-columns: repeat(auto-fit, minmax(170px, 3fr));
+            height: 290px;
+            max-width: 350px;
+            background: #06c258;
+            transition: 0.4s;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .card:hover{
+            transition: 0.4s;
+            height: 470px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        }
+
+        .card .img{
+            height: 200px;
+            width: 100%;
+        }
+
+        .card .img img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card .top-text{
+            padding: 15px;
+        }
+
+        .card .top-text .name{
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .card .top-text p{
+            font-size: 15px;
+            font-weight: 600;
+            color: #555555;
+            line-height: 20px;
+        }
+
+        .card .bottom-text{
+            padding: 0 20px 10px 20px;
+            margin-top: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s;
+        }
+
+        .card:hover .bottom-text{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card .bottom-text .text{
+            text-align: justify;
+        }
+
+        .card .bottom-text .btn{
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .card .bottom-text .btn a{
+            text-decoration: none;
+            background: #06c258;
+            color: #555555;
+            padding: 5px 8px;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+
+        .card .bottom-text .btn a:hover{
+            transform: scale(0.9)
+        }
+
+        @media screen and (max-width: 978px){
+            .container{
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .card{
+                max-width: 400px;
+                margin: 20px 0;
+            }
         }
 
         /* Footer */
@@ -136,7 +238,7 @@
             <nav>
                 <ul>
                     <li><a href="{{url_for('index')}}">Home</a></li>
-<!--                    <li><a href="{{url_for('team')}}">Team</a></li>-->
+                    <li><a href="{{url_for('team')}}">Team</a></li>
                     <li class="current"><a href="{{url_for('speakers')}}">Speakers</a></li>
                     <li><a href="{{url_for('agenda')}}">Agenda</a></li>
                     <li><a href="{{url_for('datathon')}}">Datathon</a></li>
@@ -155,12 +257,87 @@
         </div>
     </section>
 
-    <section id="speakers">
-        <h1>Speakers</h1>
-        <div class="container">
 
+    <!--SPEAKERS-->
+    <section>
+        <div class="speakers">
+            <div class="speakers-container">
+                <div class="card">
+                    <div class="img">
+                        <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">NAME</div>
+                        <p>ROLE</p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO
+                        </div>
+                        <div class="btn">
+                            <a href="">LINKEDIN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">NAME</div>
+                        <p>ROLE</p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO
+                        </div>
+                        <div class="btn">
+                            <a href="">LINKEDIN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">NAME</div>
+                        <p>ROLE</p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO
+                        </div>
+                        <div class="btn">
+                            <a href="">LINKEDIN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    </div>
+                    <div class="top-text">
+                        <div class="name">NAME</div>
+                        <p>ROLE</p>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="text">
+                            BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO
+                        </div>
+                        <div class="btn">
+                            <a href="">LINKEDIN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
 
     <footer>
         <p>WiDS, Copyright &copy; 2020</p>
