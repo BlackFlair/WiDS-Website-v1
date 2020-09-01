@@ -114,10 +114,36 @@
             color: #ffffff;
         }
 
+        /* Choice */
+        #choice{
+            position: fixed;
+            border-top: #06c258 3px solid;
+            text-decoration: none;
+            color: #ffffff;
+            background: #35424a;
+            padding: 10px;
+            text-align: center;
+            text-size: 20px;
+            z-index: 2;
+            line-height: 30px;
+        }
+
+        #choices .container{
+            text-size: 20px;
+        }
+
+        #choice a{
+            text-decoration: none;
+            color: #06c258;
+            font-weight: bold;
+
+        }
+
         /* Agenda */
         #agenda h1{
             color: #06c258;
             text-align: center;
+            margin-top: 30px;
         }
 
         .wrapper{
@@ -212,13 +238,20 @@
         </div>
     </section>
 
-    <section id="agenda">
+    <section id="choice">
         <div class="container">
-            <h1>----- DAY 1: Saturday, 5 September, 2020 -----</h1>
+                <a href="#day1">DAY 1</a>
+                <a href="#day2">DAY 2</a>
+        </div>
+    </section>
+
+    <section id="agenda">
+            <a name="day1"></a>
+            <h1>----- Day 1: Saturday, 5 September, 2020 -----</h1>
             <div class="wrapper">
                 <div class="list_wrap">
                     <ul>
-                        {% for i in range(1,12) %}
+                        {% for i in range(0,12) %}
                         <li class="content">
                             <div class="list">
                                 <div class="left">
@@ -229,7 +262,7 @@
                                 </div>
                                 <div class="right">
                                     <h2>{{d1[i][2]}}</h2>
-                                    <a href ={{d1[i][4]}}><h3>{{d1[i][3]}}</h3></a>
+                                    <a href ={{d1[i][4]}} target="_blank"><h3>{{d1[i][3]}}</h3></a>
                                 </div>
                             </div>
                         </li>
@@ -237,7 +270,31 @@
                     </ul>
                 </div>
             </div>
-        </div>
+
+            <a name="day2"></a>
+            <h1>----- DAY 2: Sunday, 6 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,11) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d2[i][0]}}</h2>
+                                    <h3>{{d2[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d2[i][2]}}</h2>
+                                    <a href ={{d2[i][4]}} target="_blank"><h3>{{d2[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
     </section>
 
     <footer>
