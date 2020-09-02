@@ -10,7 +10,37 @@ def index():
 
 @app.route('/team')
 def team():
-    return render_template("team.html")
+    core = [['../static/images/team/ApporvaSingh.jpg', 'Apporva Singh', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/Arya.jpg', 'Arya', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/Balachandra.png', 'Balachandra', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/DerrylKevinMonis.jpg', 'Derryl Kevin Monis', 'Anchor', 'Computer Science Student | NCC Cadet | Data Science Enthusiast', 'https://www.linkedin.com/in/derryl-kevin-monis-337a16110/'],
+            ['../static/images/team/EshaGupta.jpg', 'Esha Gupta', 'Anchor', 'Computer Science | Coder | Intern at GirlScript Foundation', 'https://www.linkedin.com/in/esha-gupta-56b660191'],
+            ['../static/images/team/HarshithaLingapalem.jpg', 'Harshitha Lingapalem', 'Head Volunteer', 'Computer Science Undergraduate, Meditation Coach- Enthusiast at Core Computers and Building Mobile Applications!', 'https://www.linkedin.com/in/harshitha-lingapalem-9b6981139/'],
+            ['../static/images/team/LikhithaS.jpg', 'Likhitha S', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/MuhammedShafi.jpg', 'Muhammed Shafi', 'Anchor & Designer', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/NikhilR.jpg', 'Nikhil R', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/NishanthGowda.jpg', 'Nishanth Gowda', 'Social Media & Marketing', 'Computer Science Student | Data Science Enthusiast', 'http://linkedin.com/in/nishanth-gowda-102257194'],
+            ['../static/images/team/Nithyashree.jpg', 'Nithyashree', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/PranavBedreGH.jpg', 'Pranav Bedre G H', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/Pruthvi.jpg', 'Pruthvi', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/Rituraj.jpg', 'Rituraj', 'ROLE', 'For me the world is binary, either its a 1 or a 0. To have loved and keep loving computers always, is my life. ', 'https://www.linkedin.com/in/ritu-raj-8992bb55/'],
+            ['../static/images/team/SaarangGRajan.jpg', 'Saarang G Rajan', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/SamuelT.jpg', 'Samuel T', 'Anchor & Designer', 'Computer Science Student | Machine Learning Enthusiast', 'https://www.linkedin.com/in/samuel-t-87a494185/'],
+            ['../static/images/team/Sashank.jpg', 'Sashank', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/ShivalokeshReddy.jpg', 'Shivalokesh Reddy', 'Designer', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/ShrishtiShreya.jpg', 'Shrishti Shreya', 'ROLE', 'Computer Science Student | Web Developer Enthusiast', 'https://www.linkedin.com/in/shrishti-shreya-02828a190/'],
+            ['../static/images/team/SkandhaGuruDutt.jpg', 'Skandha Guru Dutt', 'Social Media & Marketing', 'Computer Science Student | ML and Data Science Enthusiast', 'https://www.linkedin.com/in/skandha-n-29901816b/'],
+            ['../static/images/team/SrirajAsnotikar.jpg', 'Sriraj Asnotikar', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/SurinMachaiahMT.jpg', 'Surin Machaiah M T', 'Community Partnership & Developer', 'Full Stack Developer | Web Developement | App Development | Android | Flutter | Machine Learning | Robotic Process Automation (RPA)', 'https://www.linkedin.com/in/surin-machaiah-m-t-57b00416b'],
+            ['../static/images/team/YPrahasith.jpg', 'Y Prahasith', 'ROLE', 'CSE Student  | Full Stack Web Developer', 'https://www.linkedin.com/in/y-prahasith-12b829173/']]
+
+    volunteer = [['../static/images/test.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
+                 ['../static/images/test.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
+                 ['../static/images/test.jpg', 'Swathi G', ' ', ' ', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
+
+    faculty = [['../static/images/test.jpg', 'NAME', 'ROLE', 'BIO', 'LINKEDIN']]
+
+    return render_template("team.html", core=core, l_c=len(core), volunteer=volunteer, l_v=len(volunteer), faculty=faculty, l_f=len(faculty))
 
 
 @app.route('/speakers')
