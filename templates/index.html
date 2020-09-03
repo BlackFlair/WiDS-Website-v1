@@ -303,27 +303,14 @@
             <h1 class="page-title">Universities</h1>
         </div>
 
-        <section class="card-container-uni" >
-            <article>
-                <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/university/VVCE.jpg')}}">
-                </figure>
-            </article>
-            <article>
-                <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/university/NIE.png')}}">
-                </figure>
-            </article>
-            <article>
-                <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/university/JSS.jpg')}}">
-                </figure>
-            </article>
-            <article>
-                <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/university/GSSS.png')}}">
-                </figure>
-            </article>
+        <section class="card-container-uni">
+            {%for i in range(0,4)%}
+                <article>
+                    <figure class="card_thumbnail">
+                        <img src='{{university[i]}}'>
+                    </figure>
+                </article>
+            {%endfor%}
         </section>
     </section>
 

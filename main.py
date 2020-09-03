@@ -14,9 +14,14 @@ def index():
     a_twitter = "https://twitter.com/URengaraju"
     a_linkedin = "https://www.linkedin.com/in/usha-rengaraju-b570b7a2/"
 
+    university = ["../static/images/university/VVCE.jpg",
+                  "../static/images/university/NIE.png",
+                  "../static/images/university/GSSS.png",
+                  "../static/images/university/JSS.png"]
+
     ambassador = [a_img, a_name, a_role, a_desc, a_linkedin, a_twitter]
 
-    return render_template("index.html", about=about, ambassador=ambassador)
+    return render_template("index.html", about=about, ambassador=ambassador, university=university)
 
 
 @app.route('/team')
@@ -45,9 +50,9 @@ def team():
             ['../static/images/team/SurinMachaiahMT.jpg', 'Surin Machaiah M T', 'Community Partnership & Developer', 'Full Stack Developer | Web Developement | App Development | Android | Flutter | Machine Learning | Robotic Process Automation (RPA)', 'https://www.linkedin.com/in/surin-machaiah-m-t-57b00416b'],
             ['../static/images/team/YPrahasith.jpg', 'Y Prahasith', 'ROLE', 'CSE Student  | Full Stack Web Developer', 'https://www.linkedin.com/in/y-prahasith-12b829173/']]
 
-    volunteer = [['../static/images/test.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
-                 ['../static/images/test.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
-                 ['../static/images/test.jpg', 'Swathi G', ' ', ' ', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
+    volunteer = [['../static/images/volunteer/KumSomi.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
+                 ['../static/images/volunteer/SujayMudgal.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
+                 ['../static/images/volunteer/SwathiG.jpg', 'Swathi G', ' ', ' ', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
 
     faculty = [['../static/images/test.jpg', 'NAME', 'ROLE', 'BIO', 'LINKEDIN']]
 
@@ -68,14 +73,14 @@ def agenda():
           ['11:50 AM', '12:10 PM', 'Datalake for Datascience in AWS', 'Vijaya Nirmala (IBM)', 'https://www.linkedin.com/in/vijayanirmalagopal-5a54159a/'],
           ['12:10 PM', '12:30 PM', 'Natural Language Processing & its Applications', ' Kanishka Priyadharshini (Cisco)', 'https://www.linkedin.com/in/kanishka-priyadharshini-a8023467/'],
           ['12:30 PM', '12:50 PM', 'AI in healthcare', 'Dr.Arathi Sreekumari I (GE Research)', 'https://www.linkedin.com/in/arathi-sreekumari-9184bb71/'],
-          ['12:50 PM', '01:10 PM', '---', 'Kavitha Dwivedi (ISM)', 'https://www.linkedin.com/in/kavitadwivedi/'],
-          ['01:10 PM', '01:30 PM', '---', 'Dr.Lavanya Tekumalla', 'https://www.linkedin.com/in/lavanyats/'],
+          ['12:50 PM', '01:10 PM', ' ', 'Kavitha Dwivedi (ISM)', 'https://www.linkedin.com/in/kavitadwivedi/'],
+          ['01:10 PM', '01:30 PM', ' ', 'Dr.Lavanya Tekumalla', 'https://www.linkedin.com/in/lavanyats/'],
           ['01:30 PM', '01:50 PM', 'Prevent your Models from failing silently in Production', 'Sabari Lakshmi Krishnamoorthy (Saturam)', 'https://www.linkedin.com/in/sabari-lakshmi-k/'],
           ['01:50 PM', '02:10 PM', 'Actively Managing Risks with AI', 'Snigdha Ghosh (Paypal)', 'https://www.linkedin.com/in/snigdharay/'],
           ['02:10 PM', '02:30 PM', 'Inspirational Journey of Embibe (AI in education)', 'Aditi Avasthi', 'https://www.linkedin.com/in/aditiavasthi/']]
 
     d2 = [['10:30 AM', '10:50 AM', 'What can the shape of neighborhood show-and-tell?', 'Prof. Jaya Nair (IIT Bangalore)', 'https://www.linkedin.com/in/jayanair/'],
-          ['10:50 AM', '11:10 AM', '---', 'Narmada Sambaturu (IISC)', 'https://www.linkedin.com/in/narmada-sambaturu-76155720/'],
+          ['10:50 AM', '11:10 AM', ' ', 'Narmada Sambaturu (IISC)', 'https://www.linkedin.com/in/narmada-sambaturu-76155720/'],
           ['11:10 AM', '11:30 AM', 'Future and impact of AI, NLP', 'Dr.Anupama Ray (IBM Research)', 'https://www.linkedin.com/in/anupama-ray-55140826/'],
           ['11:30 AM', '11:50 AM', 'Big Buck Change in Banking', 'Vidhya Veeraraghavan', 'https://www.linkedin.com/in/vidhyaveeraraghavan/'],
           ['11:50 AM', '12:10 PM', 'Gender equality in tech', 'Deepti Rai (Senior Data Scientist - Policy Research, LinkedIn)', 'https://www.linkedin.com/in/dptrai/'],
