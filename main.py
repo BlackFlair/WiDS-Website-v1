@@ -73,14 +73,14 @@ def agenda():
           ['11:50 AM', '12:10 PM', 'Datalake for Datascience in AWS', 'Vijaya Nirmala (IBM)', 'https://www.linkedin.com/in/vijayanirmalagopal-5a54159a/'],
           ['12:10 PM', '12:30 PM', 'Natural Language Processing & its Applications', ' Kanishka Priyadharshini (Cisco)', 'https://www.linkedin.com/in/kanishka-priyadharshini-a8023467/'],
           ['12:30 PM', '12:50 PM', 'AI in healthcare', 'Dr.Arathi Sreekumari I (GE Research)', 'https://www.linkedin.com/in/arathi-sreekumari-9184bb71/'],
-          ['12:50 PM', '01:10 PM', ' ', 'Kavitha Dwivedi (ISM)', 'https://www.linkedin.com/in/kavitadwivedi/'],
-          ['01:10 PM', '01:30 PM', ' ', 'Dr.Lavanya Tekumalla', 'https://www.linkedin.com/in/lavanyats/'],
+          ['12:50 PM', '01:10 PM', '-', 'Kavitha Dwivedi (ISM)', 'https://www.linkedin.com/in/kavitadwivedi/'],
+          ['01:10 PM', '01:30 PM', '-', 'Dr.Lavanya Tekumalla', 'https://www.linkedin.com/in/lavanyats/'],
           ['01:30 PM', '01:50 PM', 'Prevent your Models from failing silently in Production', 'Sabari Lakshmi Krishnamoorthy (Saturam)', 'https://www.linkedin.com/in/sabari-lakshmi-k/'],
           ['01:50 PM', '02:10 PM', 'Actively Managing Risks with AI', 'Snigdha Ghosh (Paypal)', 'https://www.linkedin.com/in/snigdharay/'],
           ['02:10 PM', '02:30 PM', 'Inspirational Journey of Embibe (AI in education)', 'Aditi Avasthi', 'https://www.linkedin.com/in/aditiavasthi/']]
 
     d2 = [['10:30 AM', '10:50 AM', 'What can the shape of neighborhood show-and-tell?', 'Prof. Jaya Nair (IIT Bangalore)', 'https://www.linkedin.com/in/jayanair/'],
-          ['10:50 AM', '11:10 AM', ' ', 'Narmada Sambaturu (IISC)', 'https://www.linkedin.com/in/narmada-sambaturu-76155720/'],
+          ['10:50 AM', '11:10 AM', '-', 'Narmada Sambaturu (IISC)', 'https://www.linkedin.com/in/narmada-sambaturu-76155720/'],
           ['11:10 AM', '11:30 AM', 'Future and impact of AI, NLP', 'Dr.Anupama Ray (IBM Research)', 'https://www.linkedin.com/in/anupama-ray-55140826/'],
           ['11:30 AM', '11:50 AM', 'Big Buck Change in Banking', 'Vidhya Veeraraghavan', 'https://www.linkedin.com/in/vidhyaveeraraghavan/'],
           ['11:50 AM', '12:10 PM', 'Gender equality in tech', 'Deepti Rai (Senior Data Scientist - Policy Research, LinkedIn)', 'https://www.linkedin.com/in/dptrai/'],
@@ -91,7 +91,59 @@ def agenda():
           ['01:30 PM', '01:50 PM', 'AWS Ecosystem for Big Data Analytics', 'Sridevi (Agilisium)', 'https://www.linkedin.com/in/sridevi-murugayen/'],
           ['01:50 PM', '02:10 PM', 'ML to supercharge a Conversational Commerce experience', 'Tina Mani (YFret)', 'https://www.linkedin.com/in/tinamani/']]
 
-    return render_template("agenda.html", d1=d1, d2=d2)
+    d3 = [['10:30 AM', '10:50 AM', 'Connections and Differences in Data Science and Operations Research', 'Dr.Ansuya Ghosh (Thoucentric)', 'https://www.linkedin.com/in/dr-anusuya-ghosh-5a900bba/'],
+          ['10:50 AM', '11:10 AM', 'AWS Introduction', 'Preethi (Fidelity Investments)', 'https://www.linkedin.com/in/preethi-n/'],
+          ['11:10 AM', '11:30 AM', 'Advancements of AI in healthcare', 'Dr.Pooja Rajdev (United Health)', 'https://www.linkedin.com/in/poojarajdev/'],
+          ['11:30 AM', '11:50 AM', 'Applications of AI in healthcare', 'Dr.Swetha (Medwell Ventures)', 'https://in.linkedin.com/in/swetachoudhary'],
+          ['11:50 AM', '12:10 AM', 'Data Science in People Development: A 21st Century Perspective', 'Krupa Ravi (Google)', 'https://in.linkedin.com/in/kruparavi'],
+          ['12:10 AM', '12:30 AM', '-', 'Preethy Varma', 'https://www.linkedin.com/in/preethy-varma-33b4aa59/'],
+          ['12:30 AM', '12:50 AM', 'AI in Fintech', 'Meghana SuryaKumar (Crediwatch)', 'https://in.linkedin.com/in/meghnasuryakumar'],
+          ['12:50 AM', '01:10 AM', '-', 'Aditi Sinha (Locale.ai)', 'https://in.linkedin.com/in/aditi-sinha-6b774ba9'],
+          ['01:10 AM', '01:30 AM', 'Art of Storytelling', 'Swati Gaur (Kantar)', 'https://in.linkedin.com/in/swatigaur'],
+          ['01:30 AM', '01:50 AM', '-', 'Geetha (Ugam Solutions)', 'https://in.linkedin.com/in/geetha-apathotharanan-2296b318'],
+          ['01:50 AM', '02:10 AM', '-', 'Sonal Gupta (Bridgei2i)', 'https://in.linkedin.com/in/sonalgupta1981'],
+          ['02:10 AM', '02:30 AM', 'Skills required for data scientist role', 'Jigna Thacker (Kantar World)', 'https://www.linkedin.com/in/jignathacker08/'],
+          ['02:30 AM', '02:50 AM', 'Deep Learning advancements in Healthcare', 'Rajarajeshwari K (Arteleus)', 'https://www.linkedin.com/in/rajarajeshwari-k-16a22310/']]
+
+    d4 = [['10:30 AM', '10:50 AM', '-', 'Srujana Kaddevarmuth', 'https://www.linkedin.com/in/srujana-kaddevarmuth-37a32b18/'],
+          ['10:50 AM', '11:10 AM', '-', 'Lakshya Sivaramkrishnan (Google)', 'https://www.linkedin.com/in/lakshyasi/'],
+          ['11:10 AM', '11:30 AM', '-', 'Sabari (Saturam)', 'https://in.linkedin.com/in/sabari-lakshmi-k'],
+          ['11:30 AM', '11:50 AM', '-', 'Sayantika Banik , Board Member Django Software Foundation', 'https://www.linkedin.com/in/sayantika-banik/'],
+          ['11:50 AM', '12:10 AM', '-', 'Sharmistha Chatterjee', 'https://www.linkedin.com/in/sharmistha-chatterjee-7a186310/'],
+          ['12:10 AM', '12:30 AM', '-', 'Mythili Krishnan', 'https://www.linkedin.com/in/mythili-krishnan-94a5125/'],
+          ['12:30 AM', '12:50 AM', '-', ' Deepika Sandeep', 'https://www.linkedin.com/in/deepika-sandeep/'],
+          ['12:50 AM', '01:10 AM', '-', 'Ruhi Sharma Mittal (IBM Research)', 'https://www.linkedin.com/in/ruhi-sharma-mittal-4352a337/'],
+          ['01:10 AM', '01:30 AM', '-', 'Swati Gaur(Kantar)', 'https://in.linkedin.com/in/swatigaur'],
+          ['01:30 AM', '01:50 AM', 'Professor Manjira Sinha (IIT Kharagpur)', 'https://in.linkedin.com/in/manjira-sinha-8554b157'],
+          ['01:50 AM', '02:10 AM', '-', 'Elenora', '-'],
+          ['02:10 AM', '02:30 AM', '-', 'Aarthi Kumar', 'https://www.linkedin.com/in/aarthikumar/']]
+
+    d5 = [['01:00 PM', '02:00 PM', '-', 'Reeti Pandey (United HealthGroup)', 'https://www.linkedin.com/in/reeti-pandey-3992bb131/'],
+          ['02:00 PM', '03:00 PM', '-', ' Pavithra Solai Jawahar (Swiggy)', 'https://www.linkedin.com/in/pavithrasolai/'],
+          ['03:00 PM', '04:00 PM', '-', 'Gnana Lakshmi T C (Wiley)', 'https://www.linkedin.com/in/gyan-lakshmi/'],
+          ['04:00 PM', '05:00 PM', '-', 'Shreya khare', 'https://www.linkedin.com/in/shreya-khare-52b23718/'],
+          ['05:00 PM', '06:00 PM', '-', 'Kavitha Yogaraj', 'https://www.linkedin.com/in/kavitha-yogaraj-b257aa30/']]
+
+    d6 = [['01:00 PM', '02:00 PM', 'State of art models NLP with hands on with Bert', 'Madhumitha Behera (Yodlee)', 'https://www.linkedin.com/in/madhumita-behera-8185367b'],
+          ['02:00 PM', '03:00 PM', '-', 'Chirasmita Mallick (G2)', 'https://www.linkedin.com/in/chirasmitamallick/'],
+          ['03:00 PM', '04:00 PM', '-', 'Dr. C.S.Jyothirmayee Rao (Genomic Data Scientist)', 'https://www.linkedin.com/in/dr-c-s-jyothirmayee-rao-396b3715/'],
+          ['04:00 PM', '05:00 PM', '-', 'Shrutika Poyrekar (Yodlee)', 'https://www.linkedin.com/in/shrutikapoyrekar/'],
+          ['05:00 PM', '06:00 PM', '-', 'Priyamvada Joshi (Publicis Sapient)', 'https://www.linkedin.com/in/priyamvada-joshi-aa51b632/?originalSubdomain=in']]
+
+    d7 = [['01:00 PM', '02:00 PM', '-', 'Tanmayee Narendra (Phd Student - Germany)', 'https://www.linkedin.com/in/tanmayeenarendra/'],
+           ['02:00 PM', '03:00 PM', '-', 'Ranjani Swaminathan , Ramya Victor & Shwetha Lakshman Rao', ' '],
+           ['03:00 PM', '04:00 PM', '-', 'Mamta Jha', 'https://www.linkedin.com/in/mamta-jha/'],
+           ['04:00 PM', '05:00 PM', '-', 'Priyanka Sawant', 'https://www.linkedin.com/in/priyanka-sawant-49b35a18/'],
+           ['05:00 PM', '06:00 PM', '-', 'Sukanya Mondal', 'https://www.linkedin.com/in/sukanya-mondal-b4872495/'],
+           ['06:00 PM', '07:00 PM', '-', 'Shubha Shedthikere (Swiggy)', 'https://www.linkedin.com/in/shubha-shedthikere-233a3814/']]
+
+    d8 = [['01:00 PM', '02:00 PM', 'Lightning Talks', '-', '-'],
+           ['02:00 PM', '03:00 PM', '-', 'Charmi Chokshi (Shipmnts)', 'https://www.linkedin.com/in/charmichokshi/'],
+           ['03:00 PM', '04:00 PM', '-', ' Shailaja Grover (IIM Bangalore)', 'https://www.linkedin.com/in/shailaja-grover-402a576a/'],
+           ['04:00 PM', '05:00 PM', '-', 'Kumari Deepshikha', 'https://www.linkedin.com/in/deepkshikha/'],
+           ['05:00 PM', '06:00 PM', '-', ' Mady Mantha', 'https://www.linkedin.com/in/madymantha/']]
+
+    return render_template("agenda.html", d1=d1, d2=d2, d3=d3, d4=d4, d5=d5, d6=d6, d7=d7, d8=d8)
 
 
 @app.route('/datathon')

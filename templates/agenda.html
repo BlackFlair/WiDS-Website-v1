@@ -115,6 +115,8 @@
 
         /* Choice */
         #choice{
+            top: 400px;
+            min-width: 80px;
             position: fixed;
             border-top: #06c258 3px solid;
             text-decoration: none;
@@ -244,8 +246,14 @@
 
     <section id="choice">
         <div class="container">
-                <a href="#day1">DAY 1</a>
-                <a href="#day2">DAY 2</a>
+            <a href="#day1">DAY 1</a><br>
+            <a href="#day2">DAY 2</a><br>
+            <a href="#day3">DAY 3</a><br>
+            <a href="#day4">DAY 4</a><br>
+            <a href="#day5">DAY 5</a><br>
+            <a href="#day6">DAY 6</a><br>
+            <a href="#day7">DAY 7</a><br>
+            <a href="#day8">DAY 8</a>
         </div>
     </section>
 
@@ -292,6 +300,156 @@
                                 <div class="right">
                                     <h2>{{d2[i][2]}}</h2>
                                     <a href ={{d2[i][4]}} target="_blank"><h3>{{d2[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day3"></a>
+            <h1>----- DAY 3: Sunday, 12 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,13) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d3[i][0]}}</h2>
+                                    <h3>{{d3[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d3[i][2]}}</h2>
+                                    <a href ={{d3[i][4]}} target="_blank"><h3>{{d3[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day4"></a>
+            <h1>----- DAY 4: Sunday, 13 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,12) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d4[i][0]}}</h2>
+                                    <h3>{{d4[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d4[i][2]}}</h2>
+                                    <a href ={{d4[i][4]}} target="_blank"><h3>{{d4[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day5"></a>
+            <h1>----- DAY 5: Sunday, 19 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,5) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d5[i][0]}}</h2>
+                                    <h3>{{d5[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d5[i][2]}}</h2>
+                                    <a href ={{d5[i][4]}} target="_blank"><h3>{{d5[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day6"></a>
+            <h1>----- DAY 6: Sunday, 20 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,5) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d6[i][0]}}</h2>
+                                    <h3>{{d6[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d6[i][2]}}</h2>
+                                    <a href ={{d6[i][4]}} target="_blank"><h3>{{d6[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day7"></a>
+            <h1>----- DAY 7: Sunday, 26 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,6) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d7[i][0]}}</h2>
+                                    <h3>{{d7[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d7[i][2]}}</h2>
+                                    <a href ={{d7[i][4]}} target="_blank"><h3>{{d7[i][3]}}</h3></a>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
+            </div>
+
+            <a name="day8"></a>
+            <h1>----- DAY 8: Sunday, 27 September, 2020 -----</h1>
+            <div class="wrapper">
+                <div class="list_wrap">
+                    <ul>
+                        {% for i in range(0,5) %}
+                        <li class="content">
+                            <div class="list">
+                                <div class="left">
+                                    <br>
+                                    <h2>{{d8[i][0]}}</h2>
+                                    <h3>{{d8[i][1]}}</h3>
+                                    <h3>GMT+5:30</h3>
+                                </div>
+                                <div class="right">
+                                    <h2>{{d8[i][2]}}</h2>
+                                    <a href ={{d8[i][4]}} target="_blank"><h3>{{d8[i][3]}}</h3></a>
                                 </div>
                             </div>
                         </li>
