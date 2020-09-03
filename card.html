@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Speakers Cards */
+        .card-container{
+            display: table;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 3fr));
+            width: 100%;
+            position: center;
+            display: flex;
+
+        }
+
+        .card-container .card{
+            position: relative;
+            cursor: pointer;
+            padding: 40px;
+        }
+
+        .card-container .card .face{
+            width: 300px;
+            height: 300px;
+            transition: 0.5s;
+        }
+
+        .card-container .card .face.face1{
+            position: relative;
+            background: #06c258;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(190px);
+        }
+
+        .card-container .card:hover .face.face1{
+            background: #000000;
+            transform: translateY(0);
+        }
+
+        .card-container .card .face.face1 .content{
+            opacity: 0.8;
+            translation: 0.8s;
+        }
+
+        .card-container .card:hover .face.face1 .content{
+            opacity: 1;
+        }
+
+        .card-container .card .face.face1 .content img{
+            max-width: 100px;
+        }
+
+        .card-container .card .face.face1 .content h3{
+            margin: 10px 0 0;
+            padding: 0;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .card-container .card .face.face2{
+            position: relative;
+            background: #06c258;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            transform: translateY(-100px)
+        }
+
+        .card-container .card:hover .face.face2{
+            transform: translateY(0);
+        }
+
+        .card-container .card .face.face2 .content p{
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container .card .face.face2 .content a{
+            margin: 10px;
+            display: inline-block;
+            align-items: center;
+            padding: 3px;
+        }
+
+        .card-container .card .face.face2 .content a:hover{
+            background: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <h3>NAME</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <a href=""><img src=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <h3>NAME</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <a href=""><img src=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <h3>NAME</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <a href=""><img src=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
