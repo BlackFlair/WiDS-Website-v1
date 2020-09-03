@@ -116,7 +116,7 @@
 
         /* Subheading */
         .subheading{
-            margin-top: 180px;
+            margin-top: 250px;
         }
 
         .subheading h1{
@@ -139,11 +139,23 @@
         }
 
         .card-container-uni{
-            padding: 0 75px 0px 75px;
+            padding: 0 10px 0px 10px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 8fr));
             line-height: 0.5rem;
         }
+
+        .card-container-uni article{
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container-uni article .card_thumbnail{
+            margin: 5px;
+            padding: 0;
+        }
+
+
 
         .card_title{
             color: #ffffff;
@@ -156,7 +168,7 @@
         }
 
         img{
-            max-width: 100%;
+            max-width: 50%;
         }
 
         /* Boxes */
@@ -257,11 +269,7 @@
     <section class="subheading">
         <div class="container">
             <h1 class="page-title">About Us</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p> <!--About WiDS here-->
+            <p>{{about}}</p> <!--About WiDS here-->
         </div>
     </section>
 
@@ -274,15 +282,13 @@
         </div>
         <div class="container">
             <div class="box">
-                <img src="{{url_for('static', filename='images/test.jpg')}}">
-                <h2>Usha Rengaraju</h2>
-                <h3>ROLE</h3>
-                <p>
-                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                <img src={{ambassador[0]}}>
+                <h2>{{ambassador[1]}}</h2>
+                <h3>{{ambassador[2]}}</h3>
+                <p>{{ambassador[3]}}</p>
                 <div class="social-media">
-                    <a href=""><img src="{{url_for('static', filename='images/')}}"></a>
-                    <a href=""><img src="{{url_for('static', filename='images/')}}"></a>
+                    <a href="{{ambassador[4]}}"><img src="{{url_for('static', filename='images/')}}"></a>
+                    <a href="{{ambassador[5]}}"><img src="{{url_for('static', filename='images/')}}"></a>
                 </div>
             </div>
         </div>
@@ -291,30 +297,30 @@
 
 
     <!--UNIVERSITIES-->
-    <section class="boxes" style="padding: 0 75px 30px 75px;">
+    <section class="boxes" >
         <div class="subheading">
             <h1 class="page-title">Universities</h1>
         </div>
 
-        <section class="card-container-uni">
+        <section class="card-container-uni" style="padding: 0px; margin: 10px 100px;">
             <article>
                 <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <img src="{{url_for('static', filename='images/university/VVCE.jpg')}}">
                 </figure>
             </article>
             <article>
                 <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <img src="{{url_for('static', filename='images/university/NIE.png')}}">
                 </figure>
             </article>
             <article>
                 <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <img src="{{url_for('static', filename='images/university/JSS.jpg')}}">
                 </figure>
             </article>
             <article>
                 <figure class="card_thumbnail">
-                    <img src="{{url_for('static', filename='images/test.jpg')}}">
+                    <img src="{{url_for('static', filename='images/university/GSSS.png')}}">
                 </figure>
             </article>
         </section>

@@ -5,7 +5,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    about = "The Women in Data Science (WiDS) initiative aims to inspire and educate data scientists worldwide, regardless of gender, and to support women in the field. WiDS is a global movement that includes a number of initiatives  like global conferences , regional events , podcasts , datathon and webinars. WiDS Mysuru is organized in collaboration with four universities  - NIE , VVCE , GSSS and JSS"
+
+    a_img = "../static/images/UshaRengaraju.jpg"
+    a_name = "Usha Rengaraju"
+    a_role = "WiDS Mysuru Amabassador"
+    a_desc = "Usha is a polymath and India's first women Kaggle Grandmaster. She leads several communities like Women in Machine Learning and Data Science(WiMLDS – Bangalore and Mysore Chapter), TensorFlow User Group (TFUG Mysore ) and Women in Data Science Ambassador(WiDS Mysore). She organized NeuroAI (www.neuroai.in) which is India’s first-ever research symposium in the interface of Neuroscience and Data Science. She spoke at various conferences like ODSC, Pycon India, Indo Data Week, and GHCI. She specializes in Probabilistic Graphical Models, Machine Learning and Deep Learning. She has prepared curriculum for BITS Pilani’s masters in Data Science program (consumed by 20,000+ students ) and Upgrad’s PGP program in DS(consumed by 10,000+ students)"
+    a_twitter = "https://twitter.com/URengaraju"
+    a_linkedin = "https://www.linkedin.com/in/usha-rengaraju-b570b7a2/"
+
+    ambassador = [a_img, a_name, a_role, a_desc, a_linkedin, a_twitter]
+
+    return render_template("index.html", about=about, ambassador=ambassador)
 
 
 @app.route('/team')
