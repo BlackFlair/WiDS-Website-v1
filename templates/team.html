@@ -304,9 +304,9 @@
                 <ul>
                     <li><a href="{{url_for('index')}}">Home</a></li>
                     <li class="current"><a href="{{url_for('team')}}">Team</a></li>
-                    <li><a href="{{url_for('speakers')}}">Speakers</a></li>
+<!--                    <li><a href="{{url_for('speakers')}}">Speakers</a></li>-->
                     <li><a href="{{url_for('agenda')}}">Agenda</a></li>
-                    <li><a href="{{url_for('datathon')}}">Datathon</a></li>
+<!--                    <li><a href="{{url_for('datathon')}}">Datathon</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -375,29 +375,29 @@
         </div>
 
 
-        <div class="team"><h1>Faculty Team</h1>
-            <div class="team-container">
-                {%for i in range(0,l_f)%}
-                    <div class="card">
-                        <div class="img">
-                            <img src={{faculty[i][0]}}>
-                        </div>
-                        <div class="top-text">
-                            <div class="name">{{faculty[i][1]}}</div>
-                            <p>{{faculty[i][2]}}</p>
-                        </div>
-                        <div class="bottom-text">
-                            <div class="text">
-                                {{faculty[i][3]}}
-                            </div>
-                            <div class="btn">
-                                <a href="{{faculty[i][4]}}" target="_blank">LINKEDIN</a>
-                            </div>
-                        </div>
-                    </div>
-                {%endfor%}
-            </div>
-        </div>
+<!--        <div class="team"><h1>Faculty Team</h1>-->
+<!--            <div class="team-container">-->
+<!--                {%for i in range(0,l_f)%}-->
+<!--                    <div class="card">-->
+<!--                        <div class="img">-->
+<!--                            <img src={{faculty[i][0]}}>-->
+<!--                        </div>-->
+<!--                        <div class="top-text">-->
+<!--                            <div class="name">{{faculty[i][1]}}</div>-->
+<!--                            <p>{{faculty[i][2]}}</p>-->
+<!--                        </div>-->
+<!--                        <div class="bottom-text">-->
+<!--                            <div class="text">-->
+<!--                                {{faculty[i][3]}}-->
+<!--                            </div>-->
+<!--                            <div class="btn">-->
+<!--                                <a href="{{faculty[i][4]}}" target="_blank">LINKEDIN</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                {%endfor%}-->
+<!--            </div>-->
+<!--        </div>-->
     </section>
 
 
