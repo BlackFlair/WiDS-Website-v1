@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     about = "The Women in Data Science (WiDS) initiative aims to inspire and educate data scientists worldwide, regardless of gender, and to support women in the field. WiDS is a global movement that includes a number of initiatives  like global conferences , regional events , podcasts , datathon and webinars. WiDS Mysuru is organized in collaboration with four universities  - NIE , VVCE , GSSS and JSS"
 
-    a_img = "../static/images/UshaRengaraju.jpg"
+    a_img = "../static/images/team/UshaRengaraju.jpg"
     a_name = "Usha Rengaraju"
     a_role = "WiDS Mysuru Amabassador"
     a_desc = "Usha is a polymath and India's first women Kaggle Grandmaster. She leads several communities like Women in Machine Learning and Data Science(WiMLDS – Bangalore and Mysore Chapter), TensorFlow User Group (TFUG Mysore ) and Women in Data Science Ambassador(WiDS Mysore). She organized NeuroAI (www.neuroai.in) which is India’s first-ever research symposium in the interface of Neuroscience and Data Science. She spoke at various conferences like ODSC, Pycon India, Indo Data Week, and GHCI. She specializes in Probabilistic Graphical Models, Machine Learning and Deep Learning. She has prepared curriculum for BITS Pilani’s masters in Data Science program (consumed by 20,000+ students ) and Upgrad’s PGP program in DS(consumed by 10,000+ students)"
@@ -26,35 +26,43 @@ def index():
 
 @app.route('/team')
 def team():
-    core = [['../static/images/team/ApporvaSingh.jpg', 'Apporva Singh', 'Anchor', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/Arya.jpg', 'Arya', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/Balachandra.png', 'Balachandra', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/DerrylKevinMonis.jpg', 'Derryl Kevin Monis', 'Anchor', 'Computer Science Student | NCC Cadet | Data Science Enthusiast', 'https://www.linkedin.com/in/derryl-kevin-monis-337a16110/'],
-            ['../static/images/team/EshaGupta.jpg', 'Esha Gupta', 'Anchor', 'Computer Science | Coder | Intern at GirlScript Foundation', 'https://www.linkedin.com/in/esha-gupta-56b660191'],
-            ['../static/images/team/HarshithaLingapalem.jpg', 'Harshitha Lingapalem', 'Head Volunteer', 'Computer Science Undergraduate, Meditation Coach- Enthusiast at Core Computers and Building Mobile Applications!', 'https://www.linkedin.com/in/harshitha-lingapalem-9b6981139/'],
-            ['../static/images/team/LikhithaS.jpg', 'Likhitha S', 'Anchor', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/MuhammedShafi.jpg', 'Muhammed Shafi', 'Anchor & Designer', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/NikhilR.jpg', 'Nikhil R', 'Anchor', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/NishanthGowda.jpg', 'Nishanth Gowda', 'Social Media & Marketing', 'Computer Science Student | Data Science Enthusiast', 'http://linkedin.com/in/nishanth-gowda-102257194'],
-            ['../static/images/team/Nithyashree.jpg', 'Nithyashree', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/PranavBedreGH.jpg', 'Pranav Bedre G H', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/Pruthvi.jpg', 'Pruthvi', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/Rituraj.jpg', 'Rituraj', 'ROLE', 'For me the world is binary, either its a 1 or a 0. To have loved and keep loving computers always, is my life. ', 'https://www.linkedin.com/in/ritu-raj-8992bb55/'],
-            ['../static/images/team/SaarangGRajan.jpg', 'Saarang G Rajan', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/SamuelT.jpg', 'Samuel T', 'Anchor & Designer', 'Computer Science Student | Machine Learning Enthusiast', 'https://www.linkedin.com/in/samuel-t-87a494185/'],
-            ['../static/images/team/Sashank.jpg', 'Sashank', 'ROLE', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/ShivalokeshReddy.jpg', 'Shivalokesh Reddy', 'Designer', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/ShrishtiShreya.jpg', 'Shrishti Shreya', 'ROLE', 'Computer Science Student | Web Developer Enthusiast', 'https://www.linkedin.com/in/shrishti-shreya-02828a190/'],
-            ['../static/images/team/SkandhaGuruDutt.jpg', 'Skandha Guru Dutt', 'Social Media & Marketing', 'Computer Science Student | ML and Data Science Enthusiast', 'https://www.linkedin.com/in/skandha-n-29901816b/'],
-            ['../static/images/team/SrirajAsnotikar.jpg', 'Sriraj Asnotikar', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
-            ['../static/images/team/SurinMachaiahMT.jpg', 'Surin Machaiah M T', 'Community Partnership & Developer', 'Full Stack Developer | Web Developement | App Development | Android | Flutter | Machine Learning | Robotic Process Automation (RPA)', 'https://www.linkedin.com/in/surin-machaiah-m-t-57b00416b'],
-            ['../static/images/team/YPrahasith.jpg', 'Y Prahasith', 'ROLE', 'CSE Student  | Full Stack Web Developer', 'https://www.linkedin.com/in/y-prahasith-12b829173/']]
+    core = [['../static/images/team/core/ApporvaSingh.jpg', 'Apporva Singh', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/Arya.jpg', 'Arya', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/DerrylKevinMonis.jpg', 'Derryl Kevin Monis', 'Anchor', 'Computer Science Student | NCC Cadet | Data Science Enthusiast', 'https://www.linkedin.com/in/derryl-kevin-monis-337a16110/'],
+            ['../static/images/team/core/EshaGupta.jpg', 'Esha Gupta', 'Anchor', 'Computer Science | Coder | Intern at GirlScript Foundation', 'https://www.linkedin.com/in/esha-gupta-56b660191'],
+            ['../static/images/team/core/HarshithaLingapalem.jpg', 'Harshitha Lingapalem', 'Head Volunteer', 'Computer Science Undergraduate, Meditation Coach- Enthusiast at Core Computers and Building Mobile Applications!', 'https://www.linkedin.com/in/harshitha-lingapalem-9b6981139/'],
+            ['../static/images/team/core/LikhithaS.jpg', 'Likhitha S', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/MuhammedShafi.jpg', 'Muhammed Shafi', 'Anchor & Designer', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/NikhilR.jpg', 'Nikhil R', 'Anchor', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/NishanthGowda.jpg', 'Nishanth Gowda', 'Social Media & Marketing', 'Computer Science Student | Data Science Enthusiast', 'http://linkedin.com/in/nishanth-gowda-102257194'],
+            ['../static/images/team/core/Nithyashree.jpg', 'Nithyashree', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/PranavBedreGH.jpg', 'Pranav Bedre G H', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/Pruthvi.jpg', 'Pruthvi', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/Rituraj.jpg', 'Rituraj', 'ROLE', 'For me the world is binary, either its a 1 or a 0. To have loved and keep loving computers always, is my life. ', 'https://www.linkedin.com/in/ritu-raj-8992bb55/'],
+            ['../static/images/team/core/SaarangGRajan.jpg', 'Saarang G Rajan', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/SamuelT.jpg', 'Samuel T', 'Anchor & Designer', 'Computer Science Student | Machine Learning Enthusiast', 'https://www.linkedin.com/in/samuel-t-87a494185/'],
+            ['../static/images/team/core/Sashank.jpg', 'Sashank', 'ROLE', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/ShivalokeshReddy.jpg', 'Shivalokesh Reddy', 'Designer', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/ShrishtiShreya.jpg', 'Shrishti Shreya', 'ROLE', 'Computer Science Student | Web Developer Enthusiast', 'https://www.linkedin.com/in/shrishti-shreya-02828a190/'],
+            ['../static/images/team/core/SkandhaGuruDutt.jpg', 'Skandha Guru Dutt', 'Social Media & Marketing', 'Computer Science Student | ML and Data Science Enthusiast', 'https://www.linkedin.com/in/skandha-n-29901816b/'],
+            ['../static/images/team/core/SrirajAsnotikar.jpg', 'Sriraj Asnotikar', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/SurinMachaiahMT.jpg', 'Surin Machaiah M T', 'Community Partnership & Developer', 'Full Stack Developer | Web Developement | App Development | Android | Flutter | Machine Learning | Robotic Process Automation (RPA)', 'https://www.linkedin.com/in/surin-machaiah-m-t-57b00416b'],
+            ['../static/images/team/core/YPrahasith.jpg', 'Y Prahasith', 'ROLE', 'CSE Student  | Full Stack Web Developer', 'https://www.linkedin.com/in/y-prahasith-12b829173/']]
 
-    volunteer = [['../static/images/volunteer/KumSomi.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
-                 ['../static/images/volunteer/SujayMudgal.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
-                 ['../static/images/volunteer/SwathiG.jpg', 'Swathi G', ' ', ' ', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
+    volunteer = [['../static/images/team/volunteer/AyushiMishra.jpg', 'Ayushi Mishra', 'ROLE', 'Data Science and Machine Learning | NIE IEEE Student Branch Core Member - Secretary MD | Foreign Policy and International Affairs enthusiast', 'www.linkedin.com/in/ayushi-mishra7474'],
+                 ['../static/images/team/volunteer/Balachandra.png', 'Balachandra', 'Volunteer Lead, WiMLDS', 'Flutter Developer | Microsoft Learn Student Ambassador | Web developer', 'https://www.linkedin.com/in/balachandra-ds-9554391a0'],
+                 ['../static/images/team/volunteer/DharithriM.jpg', 'DharithriM', 'ROLE', 'Web development | C/C++ programming | Python | Digital marketing | Event management', 'https://www.linkedin.com/in/dharithri-m'],
+                 ['../static/images/team/volunteer/KumSomi.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
+                 ['../static/images/team/volunteer/SujayMudgal.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
+                 ['../static/images/team/volunteer/SujaAnchan.jpg', 'Suja Anchan', 'ROLE', 'Web Developer | Full Stack Developer', 'https://www.linkedin.com/in/suja-anchan-b5950619b'],
+                 ['../static/images/team/volunteer/SwathiG.jpg', 'Swathi G', 'ROLE', 'BIO', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
 
-    faculty = [['../static/images/test.jpg', 'NAME', 'ROLE', 'BIO', 'LINKEDIN']]
+    faculty = [['../static/images/team/faculty/AnanthGS.jpg', 'Ananth G S', 'Assistant Professor', 'MCA, NIE', 'A Teacher by Profession and a Learner for life. Currently pursuing a Doctorate degree in Information Retrieval and Machine Learning', 'https://www.linkedin.com/in/ananth-gouri-1b06356a'],
+               ['../static/images/team/faculty/CKVanamala.jpg', 'C K Vanamala', 'Associate Professor', 'IS&E, NIE', 'Joint Student Welfare Officer and Cultural Coordinator, NIE | Wireless Sensor Networks', 'https://www.linkedin.com/in/vanamala-c-k-49b758168'],
+               ['../static/images/team/faculty/DrAbhinandanSP.jpg', 'Dr. Abhinandan S P', 'Associate Professor', 'CS&E, NIE', 'Cloud computing | edge computing | networked systems | AI | distributed algorithms | education | system design | IoT', 'https://www.linkedin.com/in/abhinandan-s-p-00115817/'],
+               ['../static/images/team/faculty/DrJayasriBS.jpg', 'Dr. Jayasri B S', 'Associate Professor', 'CS&E, NIE', 'Wireless sensor network- reliability and energy issues | Statistical modeling | Python | Rational rose | Networking', 'https://www.linkedin.com/in/dr-jayasri-b-s-360b9a176'],
+               ['../static/images/team/faculty/MJYogesh.jpg', 'M J Yogesh', 'Assistant Professor','CS&E, NIE', 'Statistical Modeling | Databases | Big Data Analytics | Java | PhD in Big Data Analytics', 'https://www.linkedin.com/in/m-j-yogesh-47564376'],
+               ['../static/images/team/faculty/SuhaasKP.jpg', 'Suhaas K P', 'Assistant Professor', 'IS&E, NIE', 'Research Scholar', 'https://www.linkedin.com/in/suhaas-k-p-6347464b']]
 
     return render_template("team.html", core=core, l_c=len(core), volunteer=volunteer, l_v=len(volunteer), faculty=faculty, l_f=len(faculty))
 
