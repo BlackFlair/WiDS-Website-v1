@@ -51,11 +51,14 @@ def team():
 
     volunteer = [['../static/images/team/volunteer/AyushiMishra.jpg', 'Ayushi Mishra', 'ROLE', 'Data Science and Machine Learning | NIE IEEE Student Branch Core Member - Secretary MD | Foreign Policy and International Affairs enthusiast', 'www.linkedin.com/in/ayushi-mishra7474'],
                  ['../static/images/team/volunteer/Balachandra.png', 'Balachandra', 'Volunteer Lead, WiMLDS', 'Flutter Developer | Microsoft Learn Student Ambassador | Web developer', 'https://www.linkedin.com/in/balachandra-ds-9554391a0'],
+                 ['../static/images/team/volunteer/Bharath.jpg', 'Bharath Narayan Puthane', 'ROLE', 'ISE Student | WiDS, Mysore Volunteer | Tech Enthusiast | Front - End Designer ', 'https://www.linkedin.com/in/bharath-n-puthane-349b441a4'],
                  ['../static/images/team/volunteer/DharithriM.jpg', 'DharithriM', 'ROLE', 'Web development | C/C++ programming | Python | Digital marketing | Event management', 'https://www.linkedin.com/in/dharithri-m'],
+                 ['../static/images/team/volunteer/GanyaJ.jpeg', 'GanyaJ', 'ROLE', 'Computer Science Student | Data Science Enthusiast | Intern  at Progate | Debate Enthusiast and into writing', 'https://www.linkedin.com/in/ganya-janardhan'],
                  ['../static/images/team/volunteer/KumSomi.jpg', 'Kum Somi', 'Marketing', 'Beta-Microsoft Learn Student Ambassador | ML enthusiast | Poet ', 'https://www.linkedin.com/in/kum-somi-25aa8a152'],
                  ['../static/images/team/volunteer/SujayMudgal.jpg', 'Sujay Mudgal', 'Marketing ', 'I have my own startup and i have passion about business and marketing as these two play a very vital role in growing up of a Things', 'LINKEDIN'],
                  ['../static/images/team/volunteer/SujaAnchan.jpg', 'Suja Anchan', 'ROLE', 'Web Developer | Full Stack Developer', 'https://www.linkedin.com/in/suja-anchan-b5950619b'],
-                 ['../static/images/team/volunteer/SwathiG.jpg', 'Swathi G', 'ROLE', 'BIO', 'https://www.linkedin.com/in/swathi-g-52a8181a0']]
+                 ['../static/images/team/volunteer/SwathiG.jpg', 'Swathi G', 'ROLE', 'BIO', 'https://www.linkedin.com/in/swathi-g-52a8181a0'],
+                 ['../static/images/team/volunteer/VishruthS.jpg', 'Vishruth S', 'ROLE', 'Computer Science Student | Data Science Enthusiast', 'http://www.linkedin.com/in/vishruths16022000 ']]
 
     faculty = [['../static/images/team/faculty/AnanthGS.jpg', 'Ananth G S', 'Assistant Professor', 'MCA, NIE', 'A Teacher by Profession and a Learner for life. Currently pursuing a Doctorate degree in Information Retrieval and Machine Learning', 'https://www.linkedin.com/in/ananth-gouri-1b06356a'],
                ['../static/images/team/faculty/CKVanamala.jpg', 'C K Vanamala', 'Associate Professor', 'IS&E, NIE', 'Joint Student Welfare Officer and Cultural Coordinator, NIE | Wireless Sensor Networks', 'https://www.linkedin.com/in/vanamala-c-k-49b758168'],
