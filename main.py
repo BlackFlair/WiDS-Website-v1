@@ -39,7 +39,7 @@ def team():
             ['../static/images/team/core/PranavBedreGH.jpg', 'Pranav Bedre G H', 'ROLE', 'BIO', 'LINKEDIN'],
             ['../static/images/team/core/Pruthvi.jpg', 'Pruthvi', 'ROLE', 'BIO', 'LINKEDIN'],
             ['../static/images/team/core/Rituraj.jpg', 'Rituraj', 'ROLE', 'For me the world is binary, either its a 1 or a 0. To have loved and keep loving computers always, is my life. ', 'https://www.linkedin.com/in/ritu-raj-8992bb55/'],
-            ['../static/images/team/core/SaarangGRajan.jpg', 'Saarang G Rajan', 'Social Media & Marketing', 'BIO', 'LINKEDIN'],
+            ['../static/images/team/core/SaarangGRajan.jpg', 'Saarang G Rajan', 'Social Media & Marketing', 'CSE Student| DL enthusiast | Dept Placement Coordinator VVCE| U&I Volunteer | GigIndia Campus ambassador ', 'https://www.linkedin.com/in/saarang-g-rajan/'],
             ['../static/images/team/core/SamuelT.jpg', 'Samuel T', 'Anchor & Designer', 'Computer Science Student | Machine Learning Enthusiast', 'https://www.linkedin.com/in/samuel-t-87a494185/'],
             ['../static/images/team/core/Sashank.jpg', 'Sashank', 'ROLE', 'BIO', 'LINKEDIN'],
             ['../static/images/team/core/ShivalokeshReddy.jpg', 'Shivalokesh Reddy', 'Designer', 'BIO', 'LINKEDIN'],
@@ -60,7 +60,8 @@ def team():
                  ['../static/images/team/volunteer/SwathiG.jpg', 'Swathi G', 'ROLE', 'BIO', 'https://www.linkedin.com/in/swathi-g-52a8181a0'],
                  ['../static/images/team/volunteer/VishruthS.jpg', 'Vishruth S', 'ROLE', 'Computer Science Student | Data Science Enthusiast', 'http://www.linkedin.com/in/vishruths16022000 ']]
 
-    faculty = [['../static/images/team/faculty/AnanthGS.jpg', 'Ananth G S', 'Assistant Professor', 'MCA, NIE', 'A Teacher by Profession and a Learner for life. Currently pursuing a Doctorate degree in Information Retrieval and Machine Learning', 'https://www.linkedin.com/in/ananth-gouri-1b06356a'],
+    faculty = [['../static/images/team/faculty/DrMPPushpalatha.jpg', 'Dr. M P Pushpalatha', 'HOD', 'JSS', '-', '-'],
+               ['../static/images/team/faculty/AnanthGS.jpg', 'Ananth G S', 'Assistant Professor', 'MCA, NIE', 'A Teacher by Profession and a Learner for life. Currently pursuing a Doctorate degree in Information Retrieval and Machine Learning', 'https://www.linkedin.com/in/ananth-gouri-1b06356a'],
                ['../static/images/team/faculty/CKVanamala.jpg', 'C K Vanamala', 'Associate Professor', 'IS&E, NIE', 'Joint Student Welfare Officer and Cultural Coordinator, NIE | Wireless Sensor Networks', 'https://www.linkedin.com/in/vanamala-c-k-49b758168'],
                ['../static/images/team/faculty/DrAbhinandanSP.jpg', 'Dr. Abhinandan S P', 'Associate Professor', 'CS&E, NIE', 'Cloud computing | edge computing | networked systems | AI | distributed algorithms | education | system design | IoT', 'https://www.linkedin.com/in/abhinandan-s-p-00115817/'],
                ['../static/images/team/faculty/DrJayasriBS.jpg', 'Dr. Jayasri B S', 'Associate Professor', 'CS&E, NIE', 'Wireless sensor network- reliability and energy issues | Statistical modeling | Python | Rational rose | Networking', 'https://www.linkedin.com/in/dr-jayasri-b-s-360b9a176'],
