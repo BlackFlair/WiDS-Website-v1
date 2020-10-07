@@ -108,10 +108,15 @@
         }
 
         /* Datathon */
+        #datathon{
+            align-content: center;
+        }
+
         #datathon h1{
             color: #06c258;
             text-align: center;
         }
+
 
         /* Footer */
         footer{
@@ -141,7 +146,6 @@
                 <ul>
                     <li><a href="{{url_for('index')}}">Home</a></li>
                     <li><a href="{{url_for('team')}}">Team</a></li>
-                    <li><a href="{{url_for('speakers')}}">Speakers</a></li>
                     <li><a href="{{url_for('agenda')}}">Agenda</a></li>
                     <li class="current"><a href="{{url_for('datathon')}}">Datathon</a></li>
                 </ul>
@@ -149,22 +153,53 @@
         </div>
     </header>
 
-    <section id="register">
-        <div class="container">
-            <a href="{{url_for('registration')}}" target="_blank"><h1>Register Here</h1></a> <!--Registration link-->
-            <!--<form>
-                <input type="email" placeholder="Email">
-                <button type="submit" class="button1">Register</button>
-            </form>-->
-        </div>
-    </section>
+
 
     <section id="datathon">
-        <h1>Datathon</h1>
-        <div class="container">
+        <div class="container" style="padding-top: 30px;">
+            <h2 style="text-align: center;">WiDS Mysuru datathon workshop was held in collaboration with four universities -
+                NIE Mysuru , JSS , VVCE and GSSS in the month of February. <br>WiDS Mysuru clocked the highest participation in
+                WiDS global datathon hosted in Kaggle with more than 500+ students submitting their solution to the competition.</h2>
+        </div>
 
+        <div class="contaier" style="text-align: center; padding-top: 60px;">
+            <h3>
+                WiDS Datathon workshop organized at NIE Mysuru on Feb 12 th 2020 saw more than 500 students participating
+                in the workshop.
+            </h3>
+            <p>Organizers of the datathon workshop at NIE Mysuru</p>
+            <img src="../static/images/datathon/NIE_Organizers.jpeg" style="width: 40%;">
+        </div>
+
+        <div class="contaier" style="text-align: center; padding-top: 60px;">
+            <h3>
+                WiDS Datathon workshop organized at GSSS Mysuru on Feb 17 th 2020 and Feb 20 th 2020 saw more than 300 girl
+                students participating in the workshop.
+            </h3>
+            <p>Organizers of the datathon workshop at GSSS Mysuru</p>
+            <img src="../static/images/datathon/GSSS_Organizers.png" style="width: 40%;">
+        </div>
+
+        <div class="contaier" style="text-align: center; padding-top: 60px;">
+            <h3>
+                WiDS Datathon workshop organized at VVCE Mysuru on Feb 18 th 2020 saw more than 100 students participating
+                in the workshop.
+            </h3>
+            <p>Organizers of the datathon workshop at VVCE Mysuru</p>
+            <img src="../static/images/datathon/VVCE_Organizers.png" style="width: 40%;">
+        </div>
+
+        <div class="contaier" style="text-align: center; padding-top: 60px;">
+            <h3>
+                WiDS Datathon workshop organized at JSS Mysuru on Feb 19 th 2020 saw more than 200 students participating
+                in the workshop.
+            </h3>
+            <p>Organizers of the datathon workshop at JSS Mysuru</p>
+            <img src="../static/images/datathon/JSS_Organizers.png" style="width: 40%;">
         </div>
     </section>
+
+
 
     <footer>
         <p>WiDS, Copyright &copy; 2020</p>
